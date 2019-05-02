@@ -9,6 +9,11 @@
     "path": "/assets/plugins/plugin2.js",
     "deps": ["shared"]
   },
+  "plugin3": {
+    "name": "Plugin 3",
+    "path": "/assets/plugins/plugin3.js",
+    "deps": ["shared"]
+  },
   "shared": {
     "name": "Shared",
     "path": "/assets/plugins/shared.js"

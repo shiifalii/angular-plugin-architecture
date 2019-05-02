@@ -5,11 +5,13 @@ import { SharedComponent } from './shared.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab.component';
 import { ButtonComponent } from './button/button.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule } from '@angular/forms';
 
-const sharedComponents = [SharedComponent, ButtonComponent, TabComponent, TabsComponent];
+const sharedComponents = [SharedComponent, ButtonComponent, TabComponent, TabsComponent, FormsComponent];
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   declarations: [...sharedComponents],
   exports: [...sharedComponents]
 })
